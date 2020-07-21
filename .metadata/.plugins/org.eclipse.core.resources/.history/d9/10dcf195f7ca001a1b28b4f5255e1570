@@ -1,0 +1,12 @@
+package com.tutorial.web.entity;
+
+import java.util.Date;
+
+public class Notice {
+	private int id;
+	private String title;
+	private Date regdate;
+	private String writerId;
+	private int hit;
+	private String content;
+}

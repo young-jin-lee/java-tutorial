@@ -1,0 +1,5 @@
+package com.tutorial.web.controller;
+
+public class NoticeDetailController {
+
+}

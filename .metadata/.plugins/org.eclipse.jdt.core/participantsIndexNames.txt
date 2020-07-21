@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+C:\Users\dof07\Desktop\dev\java\workspaces\newlec_tutorial\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2524681677.index
+\tutorial_model1\src
+C:\Users\dof07\Desktop\dev\java\workspaces\newlec_tutorial\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2808232064.index
+\tutorial\src
+C:\Users\dof07\Desktop\dev\java\workspaces\newlec_tutorial\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1721015528.index
+\tutorial_model2\src
+C:\Users\dof07\Desktop\dev\java\workspaces\newlec_tutorial\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\892146532.index
+\tutorial_model2\src
