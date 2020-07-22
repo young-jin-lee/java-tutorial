@@ -27,11 +27,11 @@ public class NoticeListController extends HttpServlet{
 			
 		List<Notice> list = new ArrayList<>();
 		
-		String url = "jdbc:oracle:thin:@localhost:1521/xepdb1";
+		String url = "jdbc:mysql://localhost:3306/java_tutorial?serverTimezone=UTC";
 		String sql = "SELECT * FROM NOTICE";
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-			Connection con = DriverManager.getConnection(url, "testuser", "123456789a");
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con = DriverManager.getConnection(url, "root", "123456789a");
 			Statement st = con.createStatement();
 			ResultSet rs = st.executeQuery(sql);
 

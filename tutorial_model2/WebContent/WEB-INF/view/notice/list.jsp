@@ -9,13 +9,12 @@
 <html>
 
 <head>
-    <title>코딩 전문가를 만들기 위한 온라인 강의 시스템</title>
+    <title>자바 튜토리얼</title>
     <meta charset="UTF-8">
-    <title>공지사항목록</title>
+    <title>공지사항 목록</title>
     
     <link href="/css/customer/layout.css" type="text/css" rel="stylesheet" />
     <style>
-    
         #visual .content-container{	
             height:inherit;
             display:flex; 
@@ -36,7 +35,7 @@
 
             <h1 id="logo">
                 <a href="/index.html">
-                    <img src="/images/logo.png" alt="뉴렉처 온라인" />
+                    <img src="/images/logo.png" alt="튜토리얼" />
 
                 </a>
             </h1>

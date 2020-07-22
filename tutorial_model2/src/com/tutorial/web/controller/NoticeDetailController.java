@@ -23,12 +23,12 @@ public class NoticeDetailController extends HttpServlet {
 		int id = Integer.parseInt(request.getParameter("id"));
 
 
-		String url = "jdbc:oracle:thin:@localhost:1521/xepdb1";
+		String url = "jdbc:mysql://localhost:3306/java_tutorial?serverTimezone=UTC";
 		String sql = "SELECT * FROM NOTICE WHERE ID=?";
 		
 		try {
-			Class.forName("oracle.jdbc.driver.OracleDriver");
-			Connection con = DriverManager.getConnection(url, "testuser", "123456789a");
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con = DriverManager.getConnection(url, "root", "123456789a");
 			PreparedStatement st = con.prepareStatement(sql);
 			st.setInt(1, id); //첫번째 물음표에다가 id를 대입하겠다.
 
