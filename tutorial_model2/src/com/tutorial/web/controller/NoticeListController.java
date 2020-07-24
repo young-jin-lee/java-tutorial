@@ -24,7 +24,6 @@ public class NoticeListController extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
-			
 		List<Notice> list = new ArrayList<>();
 		
 		String url = "jdbc:mysql://localhost:3306/java_tutorial?serverTimezone=UTC";
@@ -43,7 +42,6 @@ public class NoticeListController extends HttpServlet{
 				int hit = rs.getInt("HIT");
 				String content = rs.getString("CONTENT");
 				String files = rs.getString("FILES");
-				
 				
 				Notice notice = new Notice(
 						id,
