@@ -29,7 +29,7 @@ public class ListController extends HttpServlet{
 		
 		String field_ = request.getParameter("f");
 		String query_ = request.getParameter("q");
-		String page_ = request.getParameter("p");
+		String page_ = request.getParameter("p"v);
 		
 		String field = "title";
 		if(field_ != null && !field_.equals(""))
