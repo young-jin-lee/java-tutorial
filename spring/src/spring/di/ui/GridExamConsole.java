@@ -6,11 +6,9 @@ import org.springframework.stereotype.Component;
 
 import spring.di.entity.Exam;
 
-@Component("console")
+
 public class GridExamConsole implements ExamConsole {
 	
-	@Autowired(required=true)
-	//@Qualifier("exam2")
 	private Exam exam;
 	
 	public GridExamConsole() {
@@ -25,10 +23,9 @@ public class GridExamConsole implements ExamConsole {
 	public void print() {
 		// TODO Auto-generated method stub
 		System.out.println("TOTAL   |    AVG   ");
-		System.out.printf("%3d   |    %3.2f   \n", exam.total(), exam.avg());
+		System.out.printf("%3d     |    %3.2f   \n", exam.total(), exam.avg());
 	}
 
-	
 	@Override
 	public void setExam(Exam exam) {
 		// TODO Auto-generated method stub

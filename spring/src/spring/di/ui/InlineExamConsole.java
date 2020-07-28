@@ -14,13 +14,11 @@ public class InlineExamConsole implements ExamConsole {
 		this.exam = exam;
 	}
 
-
 	@Override
 	public void print() {
 		// TODO Auto-generated method stub
 		System.out.printf("total is %d, avg is %f\n", exam.total(), exam.avg());
 	}
-
 
 	@Override
 	public void setExam(Exam exam) {

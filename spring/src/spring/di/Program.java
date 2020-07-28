@@ -18,31 +18,15 @@ public class Program {
 	public static void main(String[] args) {
 		
 		/* DEPENDENCY INJECTION1 */
-//		Exam exam = new NewlecExam();
-//		ExamConsole console = new InlineExamConsole(exam);
-//		ExamConsole console = new GridExamConsole(exam);
-//		console.print();
+		Exam exam = new NewlecExam(10,10, 0, 0);
+		ExamConsole console = new GridExamConsole(exam);
+		console.print();
 		
 		/* DEPENDENCY INJECTION2 */
-//		Exam exam = new NewlecExam();
+//		Exam exam = new NewlecExam(10,10, 0, 0);  
 //		ExamConsole console = new GridExamConsole();
 //		console.setExam(exam);
 //		console.print();
-		
-		/* 스프링에게 지시하는 방법으로 코드를 변경 */
-		
-		ApplicationContext context = 
-				new AnnotationConfigApplicationContext(NewlecDIConfig.class);
-				//new ClassPathXmlApplicationContext("spring/di/setting.xml"); // 지시서를 읽어오는 방법
-				
-		ExamConsole console = (ExamConsole) context.getBean("console"); // console이라는 id로 찾기
-		//ExamConsole console = context.getBean(ExamConsole.class); // ExamConsole이라는 객체 타입으로 찾기
-		console.print();
-		
-		Exam exam = context.getBean(Exam.class);
-		System.out.println(exam.toString());
-		
-		
 
 	}
 
