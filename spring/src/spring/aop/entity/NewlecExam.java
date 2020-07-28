@@ -1,10 +1,8 @@
-package spring.di.entity;
+package spring.aop.entity;
 
 public class NewlecExam implements Exam {
 
-	@Value("10")
 	private int kor;
-	@Value("20")
 	private int eng;
 	private int math;
 	private int com;
@@ -56,13 +54,16 @@ public class NewlecExam implements Exam {
 	@Override
 	public int total() {
 		// TODO Auto-generated method stub
-		return kor+eng+math+com;
+
+		int result = kor+eng+math+com;
+		return result;
 	}
 
 	@Override
 	public float avg() {
 		// TODO Auto-generated method stub
-		return total()/4.0f;
+		float result = total()/4.0f;
+		return result;
 	}
 
 	@Override
