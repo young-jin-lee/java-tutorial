@@ -3,10 +3,12 @@ package spring.di.ui;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
 import spring.di.entity.Exam;
 
-@Component("console")
+//@Component("console")
+@Controller("console")
 public class GridExamConsole implements ExamConsole {
 	
 	@Autowired(required=true)

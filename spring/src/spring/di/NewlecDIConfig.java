@@ -10,12 +10,9 @@ import spring.di.entity.NewlecExam;
 @ComponentScan("spring.di.ui")
 @Configuration
 public class NewlecDIConfig {
-
 	@Bean
 	public Exam exam() {
-		
 		return new NewlecExam();
-		
 	}
 	
 }

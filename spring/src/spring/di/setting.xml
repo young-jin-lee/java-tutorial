@@ -11,16 +11,12 @@
 	
 
 	<!-- 지시서 -->
-	<context:component-scan base-package="spring.di.ui, spring.di.entity" />
+	<!-- <context:component-scan base-package="spring.di.ui, spring.di.entity" /> -->
 	<!-- 객체생성할대 어노테이션있는지 찾아봐라. -->
 	
-	
-	
 	<!-- bean은 하나의 객체생성이다. -->
-	<!-- Exam exam = new NewlecExam();  -->
-	
-	
-	<bean id = "exam2" class = "spring.di.entity.NewlecExam" p:kor="10" p:eng="10" />
+	<!-- 1. Exam exam = new NewlecExam();  -->
+	<!-- <bean id = "exam2" class = "spring.di.entity.NewlecExam" p:kor="10" p:eng="10" /> -->
 	<!--  
 	<bean id = "exam" class = "spring.di.entity.NewlecExam"> 
 		
@@ -39,7 +35,7 @@
 	</bean>-->
 	
 	
-	<!-- ExamConsole console = new GridExamConsole(); -->
+	<!-- 2. ExamConsole console = new GridExamConsole(); -->
 	<!-- <bean id = "console" class = "spring.di.ui.GridExamConsole"> -->
 		<!-- console.setExam(exam);  -->
 		<!-- name="exam"은 setExam에서 set을 지우고 소문자로 만든 setter를 의미한다. -->
