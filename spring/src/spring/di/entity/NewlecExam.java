@@ -2,9 +2,9 @@ package spring.di.entity;
 
 public class NewlecExam implements Exam {
 
-	@Value("10")
+
 	private int kor;
-	@Value("20")
+
 	private int eng;
 	private int math;
 	private int com;
