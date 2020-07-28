@@ -11059,3 +11059,42 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-28 21:44:19.159
 !MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.jobs 4 2 2020-07-28 21:54:06.560
+!MESSAGE An internal error occurred during: "Discard Changes".
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Checkout conflict with file: .metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log
+	at org.eclipse.jgit.api.CheckoutCommand.checkoutPath(CheckoutCommand.java:523)
+	at org.eclipse.jgit.api.CheckoutCommand.access$3(CheckoutCommand.java:517)
+	at org.eclipse.jgit.api.CheckoutCommand$2.apply(CheckoutCommand.java:508)
+	at org.eclipse.jgit.dircache.DirCacheEditor.applyEdits(DirCacheEditor.java:146)
+	at org.eclipse.jgit.dircache.DirCacheEditor.finish(DirCacheEditor.java:99)
+	at org.eclipse.jgit.dircache.BaseDirCacheEditor.commit(BaseDirCacheEditor.java:243)
+	at org.eclipse.jgit.dircache.DirCacheEditor.commit(DirCacheEditor.java:92)
+	at org.eclipse.jgit.api.CheckoutCommand.checkoutPathsFromCommit(CheckoutCommand.java:514)
+	at org.eclipse.jgit.api.CheckoutCommand.checkoutPaths(CheckoutCommand.java:425)
+	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:178)
+	at org.eclipse.egit.core.op.DiscardChangesOperation.discardChanges(DiscardChangesOperation.java:244)
+	at org.eclipse.egit.core.op.DiscardChangesOperation.discardChanges(DiscardChangesOperation.java:199)
+	at org.eclipse.egit.core.op.DiscardChangesOperation.access$0(DiscardChangesOperation.java:187)
+	at org.eclipse.egit.core.op.DiscardChangesOperation$1.run(DiscardChangesOperation.java:180)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.egit.core.op.DiscardChangesOperation.execute(DiscardChangesOperation.java:183)
+	at org.eclipse.egit.core.internal.job.JobUtil$2.runInWorkspace(JobUtil.java:107)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Could not rename file C:\Users\dof07\Desktop\dev\java\workspaces\java_tutorial\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log815768088618002578.tmp to C:\Users\dof07\Desktop\dev\java\workspaces\java_tutorial\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1510)
+	at org.eclipse.jgit.api.CheckoutCommand.checkoutPath(CheckoutCommand.java:520)
+	... 19 more
+Caused by: java.io.IOException: Could not rename file C:\Users\dof07\Desktop\dev\java\workspaces\java_tutorial\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log815768088618002578.tmp to C:\Users\dof07\Desktop\dev\java\workspaces\java_tutorial\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.util.FileUtils.rename(FileUtils.java:322)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1508)
+	... 20 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-28 21:54:06.794
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-07-28 21:54:06.798
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
