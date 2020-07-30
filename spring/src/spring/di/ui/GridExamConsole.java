@@ -4,11 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
 
 import spring.di.entity.Exam;
 
 //@Component("console")
-@Controller("console")
+//@Controller("console")
+@Service("console")
 public class GridExamConsole implements ExamConsole {
 	
 	@Autowired(required=true)

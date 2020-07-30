@@ -33,13 +33,11 @@ public class Program {
 		// 2. ExamConsole console = new GridExamConsole(exam);
 		//    console.setExam(exam);
 		ExamConsole console = (ExamConsole) context.getBean("console"); // 1. console이라는 id로 찾기
-		//ExamConsole console = context.getBean(ExamConsole.class); // 2. ExamConsole이라는 객체 타입으로 찾기
+		//ExamConsole console = context.getBean(ExamConsole.class); // 2. ExamConsole이라는 객체 타입으로 찾기; 이걸 쓰면  GridExamConsole에서 어노테이션에 "console"이라고 입력하지 않아도 됨.
 		console.print();
 		
+		// 2. exam.setExam(exam);
 		Exam exam = context.getBean(Exam.class);
-		System.out.println(exam.toString());
-		
+		System.out.println(exam.toString());	
 	}
-
-	
 }
